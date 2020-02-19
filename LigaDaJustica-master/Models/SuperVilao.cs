@@ -15,5 +15,8 @@ namespace LigaDaJustica.Models
 
         [Required, Display(Name = "Super Poder")]
         public string SuperPoder { get; set; }
+
+        public int SuperHeroiId { get; set; }
+        public SuperHeroi SuperHeroi { get; set; }
     }
 }
