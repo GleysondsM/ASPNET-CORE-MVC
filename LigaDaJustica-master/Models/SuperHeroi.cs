@@ -12,6 +12,8 @@ namespace LigaDaJustica.Models
         [Required, Display(Name = "Super Poder")]
         public string SuperPoder {get; set; }	
 
+        //quando colocamos o [nome de uma propriedade] + Id,  o Entity entende automaticamente
+        //que esse é o Id do outro objeto. Nesse caso SuperVilaoId é a chave estrangeira de SuperVilão.
         public int SuperVilaoId { get; set; }
         public SuperVilao SuperVilao { get; set; }
     }
